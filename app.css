@@ -1,0 +1,90 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body{
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.panel{
+    background-color: lightcyan;
+    display: flex;
+    border-radius: 10px;
+    padding: 25px 10px;
+    
+
+}
+
+.pricing-plan{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+    border-right: 2px solid darkcyan;
+
+    padding: 0 20px;
+
+}
+
+
+.pricing-plan:last-child{
+    border-right: none;
+}
+
+.pricing-plan *{
+    border-bottom: 2px solid darkcyan;
+}
+
+.pricing-img{
+    margin: 20px 10px;
+    border-bottom-width: 0px;
+
+}
+
+.pricing-header{
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    padding: 5px 0px;
+}
+.pricing-features{
+    border: none;
+
+}
+.pricing-features-item{
+    padding: 5px 0;
+
+}
+
+.pricing-price{
+    padding: 5px 0px;
+
+}
+
+
+.pricing-button{ 
+    width: fit-content;
+    align-self: center;
+
+    border-bottom: none;
+    padding: 5px 0px;
+
+    text-decoration: none;
+    color: lightcyan;
+    letter-spacing: 1px;
+
+    border: 2px solid lightcyan;
+    border-radius: 0.3em;
+
+    background-color: darkcyan;
+
+
+}
