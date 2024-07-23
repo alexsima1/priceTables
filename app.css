@@ -1,9 +1,9 @@
-html{
+html {
     font-family: 'Open Sans', sans-serif;
 
 }
 
-body{
+body {
     background-color: darkcyan;
     display: flex;
     justify-content: center;
@@ -11,16 +11,16 @@ body{
     height: 100vh;
 }
 
-.panel{
+.panel {
     background-color: lightcyan;
     display: flex;
     border-radius: 10px;
     padding: 25px 10px;
-    
+
 
 }
 
-.pricing-plan{
+.pricing-plan {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -34,57 +34,101 @@ body{
 }
 
 
-.pricing-plan:last-child{
+.pricing-plan:last-child {
     border-right: none;
 }
 
-.pricing-plan *{
-    border-bottom: 2px solid darkcyan;
-}
 
-.pricing-img{
+.pricing-img {
     margin: 20px 10px;
-    border-bottom-width: 0px;
 
 }
 
-.pricing-header{
+.pricing-header {
     color: #888;
     font-weight: 600;
     letter-spacing: 1px;
 
     padding: 5px 0px;
 }
-.pricing-features{
+
+.pricing-features {
     border: none;
 
 }
-.pricing-features-item{
-    padding: 5px 0;
+
+.pricing-features-item {
+    padding: 15px 0;
+
+    font-size: smaller;
+
+    color: darkcyan;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.5px;
+
+    border-top: 2px solid darkcyan;
+
 
 }
 
-.pricing-price{
+.pricing-price {
     padding: 5px 0px;
+    font-size: larger;
+    font-weight: 800;
+    color: darkcyan;
+    letter-spacing: 2px;
+
+    border-top: 2px solid darkcyan;
+
 
 }
 
 
-.pricing-button{ 
+.pricing-button {
     width: fit-content;
     align-self: center;
 
     border-bottom: none;
-    padding: 5px 0px;
+    padding: 0.5em 0.3em;
 
     text-decoration: none;
-    color: lightcyan;
+    color: darkcyan;
     letter-spacing: 1px;
 
-    border: 2px solid lightcyan;
+    border: 2px solid darkcyan;
     border-radius: 0.3em;
 
-    background-color: darkcyan;
+    background-color: lightcyan;
 
+    transition: background-color 0.3s;
+}
+
+.pricing-button:hover {
+    background-color: rgba(0, 139, 139, 0.3);
+
+}
+
+@media(max-width:1200px) {
+    .panel {
+        flex-direction: column;
+    }
+
+    .pricing-plan {
+        border-right: 0;
+        border-bottom: 2px solid darkcyan;
+    }
+
+    .pricing-plan:last-child {
+        border-bottom: none;
+    }
+
+    body {
+        align-items: flex-start;
+    }
+
+    .pricing-button {
+        margin-bottom: 0.5em;
+    }
 
 }
