@@ -113,6 +113,7 @@ body {
 @media(max-width:1200px) {
     .panel {
         flex-direction: column;
+        width:85%
     }
 
     .pricing-plan {
